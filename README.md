@@ -31,7 +31,11 @@ logger = new CommonLogger
 logger.colors[CommonLogger.WARN] = CommonLogger.ANSI.RED
 
 # the first parameter is the message, any following parameters are variables.
+logger.trace "I'm a trace"
+logger.debug "Debug message"
 logger.info "%s %s!", "Hello", "World" #=> "Hello World!"
+logger.error "ERROR!"
+logger.fatal "oh man..."
 
 # watch the fps to see how your app is performing (`this` is the `CommonLogger.Timer` object)
 logger.on "frame" ->
