@@ -1,4 +1,4 @@
-# CommonLogger
+# CommonLogger.js
 
 > Cross-browser and Node.js empowered logging.
 
