@@ -25,10 +25,10 @@ CommonLogger = require('common-logger')
 ## Api
 
 ``` coffeescript
-logger = new CommonLogger
+logger        = new CommonLogger
 
 # set the log level so anything above this won't show up
-logger.level = CommonLogger.DEBUG
+logger.level  = CommonLogger.DEBUG
 
 # override default colors for any of the log levels
 logger.colors[CommonLogger.WARN] = CommonLogger.ANSI.RED
