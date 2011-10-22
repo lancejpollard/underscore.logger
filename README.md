@@ -40,6 +40,9 @@ logger.info   "%s %s!", "Hello", "World" #=> "Hello World!"
 logger.error  "ERROR!"
 logger.fatal  "oh man..."
 
+# set a custom `out` method, which defaults to `console.log`
+logger.out = (message) -> alert(message)
+
 # watch the fps to see how your app is performing (`this` is the `CommonLogger.Timer` object)
 logger.on "frame" ->
   $("#log-line-template").tmpl(@fps).appendTo("#log-panel")
