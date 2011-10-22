@@ -12,7 +12,7 @@ npm install common-logger
 
 ### Node.js
 
-``` javascript
+``` coffeescript
 CommonLogger = require('common-logger')
 ```
 

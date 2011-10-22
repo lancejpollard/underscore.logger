@@ -22,7 +22,7 @@ describe 'common-logger', ->
   
   describe 'format', ->
     beforeEach ->
-      @logger = new CommonLogger(colorized: false)
+      @logger = new CommonLogger(colorized: false, out: (m) -> m)
       
     it 'should default to a date format', ->
       now = new Date().toUTCString()

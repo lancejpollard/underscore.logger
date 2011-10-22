@@ -39,10 +39,10 @@ class CommonLogger
     @level      = options.level || @constructor.DEBUG
     @out        = options.out if options.out
     # set to false if you're in the browser
-    @colorized  = if options.hasOwnProperty("colorized") then options.colorized else true
+    @colorized  = if options.hasOwnProperty("colorized") then options.colorized else false
     @colors     = @constructor.colors.concat()
   
-  out: (message) -> message
+  out: (message) -> console.log(message)
     
   colorize: ->
     colors  = Array.prototype.slice.call(arguments)
@@ -74,7 +74,7 @@ class CommonLogger
     @log(@constructor.ERROR, arguments)
   
   warn: ->
-    @log(@constructor.WARNING, arguments)
+    @log(@constructor.WARN, arguments)
   
   info: ->
     @log(@constructor.INFO, arguments)
