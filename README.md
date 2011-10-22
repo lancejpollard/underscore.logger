@@ -13,10 +13,10 @@ npm install common-logger
 ``` coffeescript
 logger = new CommonLogger
 logger.colors[CommonLogger.WARN] = CommonLogger.ANSI.RED
-logger.info
+logger.info "Hello %s", "World"
 logger.bench 1000 -> 1 + 1
-logger.on "frame", (fps) ->
-  $("#log-line-template").tmpl(fps).appendTo("#log-panel")
+logger.on "frame" ->
+  $("#log-line-template").tmpl(@fps).appendTo("#log-panel")
 
 logger.on "message", (data) ->
   $("#log-line-template").tmpl(data).appendTo("#log-panel")
