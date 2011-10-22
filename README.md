@@ -41,7 +41,10 @@ logger.error  "ERROR!"
 logger.fatal  "oh man..."
 
 # set a custom `out` method, which defaults to `console.log`
-logger.out = (message) -> alert(message)
+logger.out    = (message) -> alert(message)
+
+# customize the format too if you'd like, which defaults to `[date] level message`
+logger.format = (date, level, message) -> message
 
 # watch the fps to see how your app is performing (`this` is the `CommonLogger.Timer` object)
 logger.on "frame" ->
