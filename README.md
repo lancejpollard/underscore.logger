@@ -8,6 +8,20 @@
 npm install common-logger
 ```
 
+## Require
+
+### Node.js
+
+```
+CommonLogger = require('common-logger')
+```
+
+### Browser
+
+``` html
+<script src="/javascripts/common-logger.js" type="text/javascript"></script>
+```
+
 ## Api
 
 ``` coffeescript
