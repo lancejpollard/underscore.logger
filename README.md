@@ -12,14 +12,16 @@ npm install common-logger
 
 ``` coffeescript
 logger = new CommonLogger
+
+# override default colors for any of the log levels
 logger.colors[CommonLogger.WARN] = CommonLogger.ANSI.RED
-logger.info "Hello %s", "World"
-logger.bench 1000 -> 1 + 1
+
+# the first parameter is the message, any following parameters are variables.
+logger.info "%s %s!", "Hello World" #=> "Hello World!"
+
+# watch the fps to see how your app is performing (`this` is the `CommonLogger.Timer` object)
 logger.on "frame" ->
   $("#log-line-template").tmpl(@fps).appendTo("#log-panel")
-
-logger.on "message", (data) ->
-  $("#log-line-template").tmpl(data).appendTo("#log-panel")
 ```
 
 ## Resources
