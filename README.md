@@ -8,8 +8,6 @@
 npm install underscore.logger
 ```
 
-## Require
-
 ### Node.js
 
 ``` coffeescript
