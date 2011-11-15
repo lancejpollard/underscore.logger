@@ -8,6 +8,12 @@
 npm install underscore.logger
 ```
 
+### Browser
+
+``` html
+<script src="/javascripts/underscore.logger.js" type="text/javascript"></script>
+```
+
 ### Node.js
 
 ``` coffeescript
@@ -20,18 +26,12 @@ If you want to make it useable everywhere in node:
 global._console ||= require('underscore.logger')
 ```
 
-Or to make it an underscore mixin:
+### Underscore Mixin
 
 ``` coffeescript
 _.mixin require('underscore.logger').toObject()
 _.log "It works!"
 _.error "Log %s in RED", "something"
-```
-
-### Browser
-
-``` html
-<script src="/javascripts/common-logger.js" type="text/javascript"></script>
 ```
 
 ## Api
