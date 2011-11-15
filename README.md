@@ -27,7 +27,7 @@ Or to make it an underscore mixin:
 ``` coffeescript
 _.mixin require('underscore.logger').toObject()
 _.log "It works!"
-_.error "Log something in RED"
+_.error "Log %s in RED", "something"
 ```
 
 ### Browser
