@@ -1,4 +1,4 @@
-# underscore.logger.js
+# underscore.logger
 
 > Cross-browser and Node.js empowered logging.
 
