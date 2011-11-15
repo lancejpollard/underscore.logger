@@ -1,0 +1,261 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+info using npm@1.0.105
+info using node@v0.6.1
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/viatropos/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose publish [ '.' ]
+silly testEngine { name: 'underscore.logger',
+silly testEngine   version: '0.3.0',
+silly testEngine   description: 'Cross-browser and Node.js empowered logging.  Use as Underscore.js mixin if desired.',
+silly testEngine   homepage: 'http://github.com/viatropos/underscore.logger.js',
+silly testEngine   main: 'lib/underscore.logger.js',
+silly testEngine   author: { name: 'Lance Pollard', email: 'lancejpollard@gmail.com' },
+silly testEngine   keywords: [ 'logging', 'node', 'browser' ],
+silly testEngine   licenses: [ { type: 'MIT', url: 'http://mths.be/mit' } ],
+silly testEngine   bugs: { url: 'https://github.com/viatropos/underscore.logger.js/issues' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/viatropos/underscore.logger.js.git' },
+silly testEngine   directories: { test: 'spec' },
+silly testEngine   _npmUser: { name: 'viatropos', email: 'lancejpollard@gmail.com' },
+silly testEngine   _id: 'underscore.logger@0.3.0',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   scripts: {} }
+verbose caching /Users/viatropos/Documents/git/personal/plugins/underscore.logger/package.json
+verbose loadDefaults underscore.logger@0.3.0
+info prepublish underscore.logger@0.3.0
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', path: '.', href: '.' }
+silly testEngine { name: 'underscore.logger',
+silly testEngine   version: '0.3.0',
+silly testEngine   description: 'Cross-browser and Node.js empowered logging.  Use as Underscore.js mixin if desired.',
+silly testEngine   homepage: 'http://github.com/viatropos/underscore.logger.js',
+silly testEngine   main: 'lib/underscore.logger.js',
+silly testEngine   author: { name: 'Lance Pollard', email: 'lancejpollard@gmail.com' },
+silly testEngine   keywords: [ 'logging', 'node', 'browser' ],
+silly testEngine   licenses: [ { type: 'MIT', url: 'http://mths.be/mit' } ],
+silly testEngine   bugs: { url: 'https://github.com/viatropos/underscore.logger.js/issues' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/viatropos/underscore.logger.js.git' },
+silly testEngine   directories: { test: 'spec' },
+silly testEngine   _npmUser: { name: 'viatropos', email: 'lancejpollard@gmail.com' },
+silly testEngine   _id: 'underscore.logger@0.3.0',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/Users/viatropos/Documents/git/personal/plugins/underscore.logger',
+silly testEngine   bundleDependencies: [] }
+verbose caching package.json
+verbose loadDefaults underscore.logger@0.3.0
+verbose pack /Users/viatropos/Documents/git/personal/plugins/underscore.logger /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/tmp.tgz
+silly makeList /Users/viatropos/Documents/git/personal/plugins/underscore.logger
+verbose mkdir (expected) error ENOENT, no such file or directory '/var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687'
+verbose mkdir (expected) error ENOENT, no such file or directory '/var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107'
+verbose mkdir done: /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107 755
+verbose mkdir'ed /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/Users/viatropos/Documents/git/personal/plugins' ]
+verbose mkdir (expected) error ENOENT, no such file or directory '/var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents'
+verbose mkdir (expected) error ENOENT, no such file or directory '/var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm'
+verbose mkdir done: /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/tmp.tgz' ],
+silly spawning   '/var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm' ]
+silly tar err x underscore.logger/.gitignore
+silly tar err x underscore.logger/Cakefile
+silly tar err x underscore.logger/package.json
+silly tar err x underscore.logger/README.md
+silly tar err x underscore.logger/lib/underscore.logger.js
+silly tar err x underscore.logger/spec/index.html
+silly tar err x underscore.logger/spec/loggerSpec.coffee
+silly tar err x underscore.logger/src/underscore.logger.coffee
+silly tar exit 0
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger/.gitignore
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger/Cakefile
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger/package.json
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger/README.md
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger/lib
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger/lib/underscore.logger.js
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger/spec
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger/spec/index.html
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger/spec/loggerSpec.coffee
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger/src
+silly asyncMap in gTP /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger/src/underscore.logger.coffee
+verbose gunzed /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger
+verbose rm'ed /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/package
+verbose renamed [ '/var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/___package.npm/underscore.logger',
+verbose renamed   '/var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/package' ]
+silly testEngine { name: 'underscore.logger',
+silly testEngine   version: '0.3.0',
+silly testEngine   description: 'Cross-browser and Node.js empowered logging.  Use as Underscore.js mixin if desired.',
+silly testEngine   homepage: 'http://github.com/viatropos/underscore.logger.js',
+silly testEngine   main: 'lib/underscore.logger.js',
+silly testEngine   author: { name: 'Lance Pollard', email: 'lancejpollard@gmail.com' },
+silly testEngine   keywords: [ 'logging', 'node', 'browser' ],
+silly testEngine   licenses: [ { type: 'MIT', url: 'http://mths.be/mit' } ],
+silly testEngine   bugs: { url: 'https://github.com/viatropos/underscore.logger.js/issues' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/viatropos/underscore.logger.js.git' },
+silly testEngine   directories: { test: 'spec' },
+silly testEngine   _npmUser: { name: 'viatropos', email: 'lancejpollard@gmail.com' },
+silly testEngine   _id: 'underscore.logger@0.3.0',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/package' }
+verbose caching /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/package/package.json
+verbose loadDefaults underscore.logger@0.3.0
+verbose tarball contents [ 'package' ]
+verbose from cache /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/package/package.json
+verbose pack /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/package /Users/viatropos/.npm/underscore.logger/0.3.0/package.tgz
+silly makeList /var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents/package
+verbose mkdir'ed /Users/viatropos/.npm/underscore.logger/0.3.0
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/var/folders/T4/T4Hvwd2MEsWu2cjSEFKHwU+++TI/-Tmp-/npm-1321321493687/1321321493687-0.6740006066393107/contents' ]
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm'
+verbose mkdir done: /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/viatropos/.npm/underscore.logger/0.3.0/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/Users/viatropos/.npm/underscore.logger/0.3.0/package.tgz' ],
+silly spawning   '/Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm' ]
+silly tar err x package/.gitignore
+silly tar err x package/Cakefile
+silly tar err x package/package.json
+silly tar err x package/README.md
+silly tar err x package/lib/underscore.logger.js
+silly tar err x package/spec/index.html
+silly tar err x package/spec/loggerSpec.coffee
+silly tar err x package/src/underscore.logger.coffee
+silly tar exit 0
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package/.gitignore
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package/Cakefile
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package/package.json
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package/README.md
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package/lib
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package/lib/underscore.logger.js
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package/spec
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package/spec/index.html
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package/spec/loggerSpec.coffee
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package/src
+silly asyncMap in gTP /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package/src/underscore.logger.coffee
+verbose gunzed /Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package
+verbose rm'ed /Users/viatropos/.npm/underscore.logger/0.3.0/package
+verbose renamed [ '/Users/viatropos/.npm/underscore.logger/0.3.0/___package.npm/package',
+verbose renamed   '/Users/viatropos/.npm/underscore.logger/0.3.0/package' ]
+silly testEngine { name: 'underscore.logger',
+silly testEngine   version: '0.3.0',
+silly testEngine   description: 'Cross-browser and Node.js empowered logging.  Use as Underscore.js mixin if desired.',
+silly testEngine   homepage: 'http://github.com/viatropos/underscore.logger.js',
+silly testEngine   main: 'lib/underscore.logger.js',
+silly testEngine   author: { name: 'Lance Pollard', email: 'lancejpollard@gmail.com' },
+silly testEngine   keywords: [ 'logging', 'node', 'browser' ],
+silly testEngine   licenses: [ { type: 'MIT', url: 'http://mths.be/mit' } ],
+silly testEngine   bugs: { url: 'https://github.com/viatropos/underscore.logger.js/issues' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/viatropos/underscore.logger.js.git' },
+silly testEngine   directories: { test: 'spec' },
+silly testEngine   _npmUser: { name: 'viatropos', email: 'lancejpollard@gmail.com' },
+silly testEngine   _id: 'underscore.logger@0.3.0',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: 
+silly testEngine    { shasum: '6966a81e1e31bbfa017c2f42655d1d6331b3c9fe',
+silly testEngine      tarball: 'http://registry.npmjs.org/underscore.logger/-/underscore.logger-0.3.0.tgz' } }
+verbose caching /Users/viatropos/.npm/underscore.logger/0.3.0/package/package.json
+verbose loadDefaults underscore.logger@0.3.0
+silly updated sha bytes 10240
+info shasum 6966a81e1e31bbfa017c2f42655d1d6331b3c9fe
+info shasum /Users/viatropos/.npm/underscore.logger/0.3.0/package.tgz
+verbose from cache /Users/viatropos/.npm/underscore.logger/0.3.0/package/package.json
+verbose chmod /Users/viatropos/.npm/underscore.logger/0.3.0/package.tgz 644
+verbose chown [ '/Users/viatropos/.npm/underscore.logger/0.3.0/package.tgz',
+verbose chown   501,
+verbose chown   20 ]
+silly publish { name: 'underscore.logger',
+silly publish   version: '0.3.0',
+silly publish   description: 'Cross-browser and Node.js empowered logging.  Use as Underscore.js mixin if desired.',
+silly publish   homepage: 'http://github.com/viatropos/underscore.logger.js',
+silly publish   main: 'lib/underscore.logger.js',
+silly publish   author: { name: 'Lance Pollard', email: 'lancejpollard@gmail.com' },
+silly publish   keywords: [ 'logging', 'node', 'browser' ],
+silly publish   licenses: [ { type: 'MIT', url: 'http://mths.be/mit' } ],
+silly publish   bugs: { url: 'https://github.com/viatropos/underscore.logger.js/issues' },
+silly publish   repository: 
+silly publish    { type: 'git',
+silly publish      url: 'git://github.com/viatropos/underscore.logger.js.git' },
+silly publish   directories: { test: 'spec' },
+silly publish   _npmUser: { name: 'viatropos', email: 'lancejpollard@gmail.com' },
+silly publish   _id: 'underscore.logger@0.3.0',
+silly publish   dependencies: {},
+silly publish   devDependencies: {},
+silly publish   engines: { node: '*' },
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.0.105',
+silly publish   _nodeVersion: 'v0.6.1',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: '6966a81e1e31bbfa017c2f42655d1d6331b3c9fe',
+silly publish      tarball: 'http://registry.npmjs.org/underscore.logger/-/underscore.logger-0.3.0.tgz' } }
+verbose PUT underscore.logger
+verbose raw, before any munging underscore.logger
+verbose url resolving [ 'https://registry.npmjs.org/', './underscore.logger' ]
+verbose url resolved https://registry.npmjs.org/underscore.logger
+verbose GET underscore.logger
+verbose raw, before any munging underscore.logger
+verbose url resolving [ 'https://registry.npmjs.org/', './underscore.logger' ]
+verbose url resolved https://registry.npmjs.org/underscore.logger
+info Already published underscore.logger@0.3.0
+verbose uploading bin dists []
+ERR! publish fail Cannot publish over existing version.
+ERR! publish fail Bump the 'version' field, set the --force flag, or
+ERR! publish fail     npm unpublish 'underscore.logger@0.3.0'
+ERR! publish fail and try again
+ERR! 
+ERR! System Darwin 10.7.0
+ERR! command "node" "/usr/local/bin/npm" "publish"
+ERR! cwd /Users/viatropos/Documents/git/personal/plugins/underscore.logger
+ERR! node -v v0.6.1
+ERR! npm -v 1.0.105
+ERR! code EPUBLISHCONFLICT
+verbose exit [ 1, true ]
