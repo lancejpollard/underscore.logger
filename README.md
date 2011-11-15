@@ -29,7 +29,7 @@ global._console ||= require('underscore.logger')
 ### Underscore Mixin
 
 ``` coffeescript
-_.mixin require('underscore.logger').toObject()
+_.mixin require('underscore.logger').toObject() # _.mixin(_console.toObject())
 _.log "It works!"
 _.error "Log %s in RED", "something"
 ```
