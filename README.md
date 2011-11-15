@@ -1,11 +1,11 @@
-# CommonLogger.js
+# underscore.logger.js
 
 > Cross-browser and Node.js empowered logging.
 
 ## Install
 
 ```
-npm install common-logger
+npm install underscore.logger
 ```
 
 ## Require
@@ -13,7 +13,19 @@ npm install common-logger
 ### Node.js
 
 ``` coffeescript
-CommonLogger = require('common-logger')
+_console = require('underscore.logger')
+```
+
+If you want to make it useable everywhere in node:
+
+``` coffeescript
+global._console ||= require('underscore.logger')
+```
+
+Or to make it an underscore mixin:
+
+``` coffeescript
+_.mixin require('underscore.logger').toMixin()
 ```
 
 ### Browser
@@ -25,30 +37,38 @@ CommonLogger = require('common-logger')
 ## Api
 
 ``` coffeescript
-logger        = new CommonLogger
-
 # set the log level so anything above this won't show up
-logger.level  = CommonLogger.DEBUG
+_console.level  = _console.constructor.DEBUG
+
+# you can access the constructor helpers like this as well:
+Logger          = _console.constructor
+_console.level  = Logger.DEBUG
 
 # override default colors for any of the log levels
-logger.colors[CommonLogger.WARN] = CommonLogger.ANSI.RED
+_console.colors[Logger.WARN] = Logger.ANSI.RED
 
 # the first parameter is the message, any following parameters are variables.
-logger.trace  "I'm a trace"
-logger.debug  "Debug message"
-logger.info   "%s %s!", "Hello", "World" #=> "Hello World!"
-logger.error  "ERROR!"
-logger.fatal  "oh man..."
+_console.trace  "I'm a trace"
+_console.debug  "Debug message"
+_console.info   "%s %s!", "Hello", "World" #=> "Hello World!"
+_console.error  "ERROR!"
+_console.fatal  "oh man..."
 
 # set a custom `out` method, which defaults to `console.log`
-logger.out    = (message) -> alert(message)
+_console.out    = (message) -> alert(message)
 
 # customize the format too if you'd like, which defaults to `[date] level message`
-logger.format = (date, level, message) -> message
+_console.format = (date, level, message) -> message
 
-# watch the fps to see how your app is performing (`this` is the `CommonLogger.Timer` object)
-logger.on "frame" ->
+# watch the fps to see how your app is performing (`this` is the `Logger.Timer` object)
+_console.on "frame" ->
   $("#log-line-template").tmpl(@fps).appendTo("#log-panel")
+```
+
+To create a new one, maybe because you want two separate loggers (the edge case), you can use the constructor:
+
+``` coffeescript
+myLogger = new _console.constructor
 ```
 
 ## Resources

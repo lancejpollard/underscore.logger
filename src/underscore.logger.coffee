@@ -1,4 +1,4 @@
-class CommonLogger
+class Logger
   @FATAL:       0
   @ERROR:       1
   @WARN:        2
@@ -36,11 +36,11 @@ class CommonLogger
   @colors:      [@ANSI.MAGENTA, @ANSI.RED, @ANSI.YELLOW, @ANSI.GREEN, @ANSI.CYAN, @ANSI.BLUE]
   
   constructor: (options = {}) ->
-    @level      = options.level || @constructor.DEBUG
+    @level      = options.level || Logger.DEBUG
     @out        = options.out if options.out
     # set to false if you're in the browser
     @colorized  = if options.hasOwnProperty("colorized") then options.colorized else false
-    @colors     = @constructor.colors.concat()
+    @colors     = Logger.colors.concat()
   
   out: (message) -> console.log(message)
     
@@ -52,38 +52,41 @@ class CommonLogger
     while color = colors[i]
       result += "\033[#{color}m"
       i++
-    result += "#{string}\033[#{@constructor.ANSI.OFF}m"
+    result += "#{string}\033[#{Logger.ANSI.OFF}m"
     result
   
   format: (date, level, message) ->
     # Common Log Date Format: [10/Oct/2000:13:55:36 -0700]
-    "[#{date.toUTCString()}] #{@constructor.levels[level]} #{message}"
+    "[#{date.toUTCString()}] #{Logger.levels[level]} #{message}"
     
-  log: (level, args) ->
+  _log: (level, args) ->
     if level <= @level
       i       = 0
       message = args[0].replace /%s/g, -> args[i++]
       message = @format(new Date(), level, message)
       message = @colorize(message, @colors[level]) if @colorized
       @out message
+      
+  log: ->
+    @info(arguments...)
     
   fatal: ->
-    @log(@constructor.FATAL, arguments)
+    @_log(Logger.FATAL, arguments)
   
   error: ->
-    @log(@constructor.ERROR, arguments)
+    @_log(Logger.ERROR, arguments)
   
   warn: ->
-    @log(@constructor.WARN, arguments)
+    @_log(Logger.WARN, arguments)
   
   info: ->
-    @log(@constructor.INFO, arguments)
+    @_log(Logger.INFO, arguments)
   
   debug: ->
-    @log(@constructor.DEBUG, arguments)
+    @_log(Logger.DEBUG, arguments)
   
   trace: ->
-    @log(@constructor.TRACE, arguments)
+    @_log(Logger.TRACE, arguments)
     
   group: ->
     
@@ -94,12 +97,23 @@ class CommonLogger
       when "line"
         @
       when "frame"
-        @timer ?= new CommonLogger.Timer()
+        @timer ?= new Logger.Timer()
         @timer.on(event, callback)
       when "bench"
         @
     @
   
+  toObject: ->
+    logger = @
+    
+    log:    -> logger.log(arguments...)
+    fatal:  -> logger.fatal(arguments...)
+    error:  -> logger.error(arguments...)
+    warn:   -> logger.warn(arguments...)
+    info:   -> logger.info(arguments...)
+    debug:  -> logger.debug(arguments...)
+    trace:  -> logger.trace(arguments...)
+    
   class @Timer
     constructor: ->
       @now                = Date.now()
@@ -147,7 +161,7 @@ class CommonLogger
         for handler in @handlers
           handler.apply(@)
 
-if typeof module == 'undefined'
-  this["CommonLogger"] = CommonLogger
+if typeof module == 'undefined' || typeof window != 'undefined'
+  window["_console"]  = new Logger(colorized: false)
 else
-  module.exports = CommonLogger
+  module.exports      = new Logger(colorized: true)
