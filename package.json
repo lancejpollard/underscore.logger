@@ -25,5 +25,10 @@
   },
   "directories": {
     "test": "spec"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "jasmine-node": "*",
+    "underscore": "1.x"
   }
 }
