@@ -3,7 +3,7 @@ fs              = require 'fs'
 sys             = require 'util'
 
 task 'coffee', ->
-  coffee = spawn './node_modules/coffee-script/bin/coffee', ['-o', 'lib', '-w', 'src']
+  coffee = spawn './node_modules/coffee-script/bin/coffee', ['-o', 'lib', 'src']
   coffee.stdout.on 'data', (data) -> console.log data.toString().trim()
 
 task 'spec', 'Run jasmine specs', ->

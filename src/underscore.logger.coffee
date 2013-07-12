@@ -50,9 +50,9 @@ class Logger
     result  = ""
     i       = 0
     while color = colors[i]
-      result += "\033[#{color}m"
+      result += "\x33[#{color}m"
       i++
-    result += "#{string}\033[#{Logger.ANSI.OFF}m"
+    result += "#{string}\x33[#{Logger.ANSI.OFF}m"
     result
   
   format: (date, level, message) ->
