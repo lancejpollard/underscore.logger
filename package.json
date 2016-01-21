@@ -2,7 +2,7 @@
   "name": "underscore.logger",
   "version": "0.3.0",
   "description": "Cross-browser and Node.js empowered logging.  Use as Underscore.js mixin if desired.",
-  "homepage": "http://github.com/viatropos/underscore.logger.js",
+  "homepage": "http://github.com/lancejpollard/underscore.logger",
   "main": "lib/underscore.logger.js",
   "author": "Lance Pollard <lancejpollard@gmail.com>",
   "keywords": [
@@ -17,11 +17,11 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/viatropos/underscore.logger.js/issues"
+    "url": "https://github.com/lancejpollard/underscore.logger/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/viatropos/underscore.logger.js.git"
+    "url": "https://github.com/lancejpollard/underscore.logger.git"
   },
   "directories": {
     "test": "spec"
